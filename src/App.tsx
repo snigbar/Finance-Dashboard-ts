@@ -5,11 +5,12 @@ import { BrowserRouter,Routes,Route } from "react-router-dom"
 import Navbar from "./Pages/Navbar"
 import Dashboard from "./Pages/Dashboard/Dashboard"
 import Prediction from "./Pages/Predictions/Prediction"
+import { themeSettings } from "./theme"
 
 
 function App() {
 
-  const theme = useMemo(()=> createTheme(),[])
+  const theme = useMemo(()=> createTheme(themeSettings),[])
   return (
     <div className="app">
       <BrowserRouter>

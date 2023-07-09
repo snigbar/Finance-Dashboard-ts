@@ -9,13 +9,12 @@ import { FlexBetween } from '@/Components/FlexBetween/FlexBetween'
 type Props = {}
 
 
-
 const Navbar = (props: Props) => {
     const [selected, setSelected] = useState("dashboard");
     const {palette} = useTheme()
 
   return (
-    <FlexBetween mb='0.25 rem' color={palette.grey[300]}>
+    <FlexBetween mb='0.25 rem' p="0.8rem 0rem" color={palette.grey[300]}>
     {/* left nav */}
     <FlexBetween gap='0.75rem'>
     <PixIcon sx={{fontSize: '28px'}}></PixIcon>
